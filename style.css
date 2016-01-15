@@ -1,0 +1,315 @@
+@import url(https://fonts.googleapis.com/css?family=McLaren);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+a {
+	color: #78c3ae;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+a:visited {
+	color: #6f797a;;
+}
+body {
+  	font-family: 'Quicksand', 'McLaren', cursive;
+    color: #fff;
+	margin: 20px;
+    padding: 0;
+    background: #222930 url(body_bg.gif) repeat;
+}
+button{
+	padding: 5px 15px;
+	background-color: transparent;
+	color: #fff;
+	border: medium none;
+	font-size: 22px;
+	transition: background-color 300ms linear 0s;
+	vertical-align: top;
+    margin-top: 5px;
+    font-family: 'Quicksand';
+    border-radius: 5px;
+    font-weight: lighter;
+   	cursor: pointer;
+}
+button:hover{
+	background-color: #b94242;
+}
+button:focus{
+	outline: none;
+}
+h1 {
+	text-align: center;
+	color: #B93939;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 30px;
+	font-size: 80px;
+	
+}
+h2 {
+	margin: 20px 40px;
+	color: #40939C;
+	text-transform: uppercase;
+}
+h3 {
+	margin: 20px 80px;
+}
+h4 {
+	margin: 20px 120px;
+}
+input[type="submit"]{
+	margin: 20px;
+	padding: 10px 20px;
+	background-color: rgba(9,11,13,0.25);
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	transition: background-color 300ms linear;
+	-webkit-transition: background-color 300ms linear;
+	color: #fff;
+}
+input[type="submit"]:hover{
+/* 	background-color: #943c3c; */
+}
+input[type="submit"]:focus{
+	outline: none;
+}
+input[type="radio"]{
+	margin: 15px;
+}
+p {
+	text-transform: none;
+	font-weight: normal;
+	color: white;
+	font-size: 16px;
+	margin-left: 40px;	
+}
+table {
+	border: solid 2px rgba(255,255,255,0.25);
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+td {
+	border: dashed rgba(255,255,255,0.25);
+	border-width: 2px 2px 0 0;
+	text-align: center;
+}
+td input {
+	background: none;
+	border: none;
+	padding: 0px;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	font-size: 16px;
+	color: transparent;
+    text-shadow: 0px 0px 0px #51b1bc;
+    transition: text-shadow 500ms linear;
+	-webkit-transition: text-shadow 500ms linear;
+	cursor: pointer;
+}
+td input:focus {
+	background-color: rgba(9,11,13,0.25);
+	outline: #51B1BC auto 5px;
+}
+#animation {
+	position: fixed;
+	top: 50%;
+	left: 1px;
+	margin-top: -200px;
+	display: table;
+	width: 844px;
+}
+.bottom {
+	border-bottom: solid 2px rgba(255,255,255,0.25);
+}
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+.conflict {
+	color: transparent;
+	text-shadow: 0px 0px 0px #b94242;
+}
+#coordinates {
+	color: #b94242;
+	text-align: center;
+}
+.center {
+	text-align: center;
+}
+.correct {
+	color: #8bc53e !important;
+}
+#difficulty {
+	text-align: center;
+}
+.fa-pause {
+	position: relative;
+	float: right;
+	top: -35px;
+	display: none;
+}
+.fa-play {
+	position: relative;
+	float: right;
+	top: -35px;
+	display: none;
+}
+.fa-undo {
+	cursor: pointer;
+	color: #51B1BC;
+	margin: 0px 12px;
+}
+#modal {
+	color: #1d2329;
+	background-color: #5f5f5f;
+	width: 400px;
+	padding: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	left: 50%;
+	margin-left: -220px;
+	top: 50%;
+	color: #fff;
+	margin-top: -105px;
+}
+#options {
+	margin: 0 auto;
+	width: 552px;
+	margin-bottom: 20px;
+}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url(overlay.png);
+}
+#paused {
+	color: rgba(255,255,255,0.25);
+}
+#pausehovertext {
+	position: relative;
+	top: -34px;
+	left: 35px;
+	color: #b94242;
+	font-size: 20px;
+	display: none;
+	float: left;
+}
+.right {
+	border-right: solid 2px rgba(255,255,255,0.25);
+}
+.secondary-color {
+	color: white;
+}
+.selected-button {
+	background-color: #b94242;
+}
+.sudokucell {
+	height: 55px;
+	width: 55px;
+	opacity: inherit;
+}
+.styled-select {
+	width: 181px;
+	height: 46px;
+	overflow: hidden;
+	background: none repeat scroll 0% 0% #FFF;
+	display: inline-block;
+}
+.styled-select select {
+	background: url('dropdown-bg.png') no-repeat 55% 3px;
+	background-size: 40px;
+	border: none;
+	color: #757575;
+	font-size: 22px;
+	padding: 11px 40px 10px 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 292px;
+	height: 47px;
+}
+
+.styled-select select:focus {
+	border: none;
+}
+#timer {
+	width: 168px;
+	font-size: 30px;
+	font-weight: 300;
+}
+#timer:hover {
+/* 	background-color: #b94242; */
+}
+#timercontainer {
+	display: inline-block;
+	height: 40px;
+	vertical-align: top;
+	margin-top: 7px;
+	transition: color 200ms linear;
+	-webkit-transition: color 200ms linear;
+	color: rgba(255, 255, 255, 0.25);
+	cursor: pointer;
+}
+#timercontainer:hover { 
+/* 	color: rgba(255,255,255,0.25) !important; */
+}
+.transparent {
+	opacity: 0;
+	transition: opacity 300ms linear;
+	-webkit-transition: opacity 300ms linear;
+}
+.isvisible {
+	opacity: 100;
+	transition: opacity 300ms linear;
+	-webkit-transition: opacity 300ms linear;
+}
+.user {    
+	background-color: none;    
+	-webkit-transition: background-color 100ms ease;
+	transition: background-color 100ms ease;
+}
+.user:hover {
+	background-color: rgba(9,11,13,0.25);
+}
+#wintext {
+	margin-bottom: 150px;
+}
+
+input[type=radio].css-checkbox {
+	display:none;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:25px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+label {margin-right:20px;}
+input[type=radio].sudokucheckbox:checked + label.sudokulabel {
+	background-position: 0 -20px;
+}
+label.sudokulabel {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_b368be1f48be10c0e6c77784088645f6.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

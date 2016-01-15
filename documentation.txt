@@ -1,0 +1,5 @@
+When the page loads, a 9x9 grid is created, and a JSON file with a 9x9 array is pulled. I take that data and fill it into my html table. The default puzzle is easy, there are a total of 9 different puzzle, 3 puzzles for each difficulty. When the user chooses a difficulty, a random puzzle of that difficulty is chosen. The user can click any of the difficulty buttons at the top of the page to load a new puzzle, or click the reset icon to restore their current puzzle. The user can also pause the timer by clicking on it. All of the menu items above the puzzle have an audio sfx that is played when they are clicked using HTML5 audio tags.
+
+When user input is detected in the input cells, I check the row, column, and 3x3 grid it is in for any matching value. If a conflict is found, the input color turns red, indicating the input is invalid. Everytime a user inputs a value, I recheck the other cells in case that new input has either caused or resolved a conflict in another cell. 
+
+Once all the input cells have been filled, I check to see if there are any conflicts on the board. If there are none then all the digits turn green, and a animation crawls across the screen.

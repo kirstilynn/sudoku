@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sudoku</title>
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<audio id="selectsnd" src="14011.mp3" type="audio/mpeg" preload="auto"></audio>
+
+		<h1>Sudoku</h1>
+		<div id="options">
+			<i id="reset" class="fa fa-undo fa-3x"></i>
+			<button type="button" id="easy">easy</button>
+			<button type="button" id="medium">medium</button>
+			<button type="button" id="hard">hard</button>
+			<div id="timercontainer">	
+				<div id="timer">00:00:00</div>
+				<div id="pausehovertext" style="display:none;"><div>pause</div></div>
+				<i id="pause-icon" class="fa fa-pause fa-2x"></i>
+				<i id="play-icon" class="fa fa-play fa-2x"></i>
+			</div>
+		</div>
+		<div id="container"><div id="coordinates"></div></div>
+		<div id="animation" style="left:-900px;">
+			<img id="wintext" src="win.png">
+			<img src="nyancat.gif">
+		</div>
+		<script src="sudoku.js"></script>
+	</body>
+</html>
